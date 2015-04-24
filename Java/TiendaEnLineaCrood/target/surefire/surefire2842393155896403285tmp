@@ -1,0 +1,8 @@
+#surefire
+#Mon Apr 20 23:09:10 COT 2015
+maven.ext.class.path=C\:\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=E\:\\archivo\\TiendaEnLineaCrood
+file.encoding=UTF-8
+localRepository=C\:\\Users\\admin\\.m2\\repository
+basedir=E\:\\archivo\\TiendaEnLineaCrood
+test=edu.co.sena.tiendaenlineacrood.PagoTestJPA\#buscarTipoPago

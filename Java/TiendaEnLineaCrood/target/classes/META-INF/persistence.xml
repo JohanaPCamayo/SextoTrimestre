@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="edu.co.sena_TiendaEnLineaCrood_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>edu.co.sena.tiendaenlineacrood.Catalogo</class>
+    <class>edu.co.sena.instrumusiccrood.DomicilioCuenta</class>
+    <class>edu.co.sena.instrumusiccrood.Cuenta</class>
+    <class>edu.co.sena.instrumusiccrood.Categoria</class>
+    <class>edu.co.sena.instrumusiccrood.Item</class>
+    <class>edu.co.sena.instrumusiccrood.DomicilioProveedor</class>
+    <class>edu.co.sena.instrumusiccrood.Inventario</class>
+    <class>edu.co.sena.instrumusiccrood.Factura</class>
+    <class>edu.co.sena.instrumusiccrood.Usuario</class>
+    <class>edu.co.sena.instrumusiccrood.Carritodecompras</class>
+    <class>edu.co.sena.instrumusiccrood.Pago</class>
+    <class>edu.co.sena.instrumusiccrood.Producto</class>
+    <class>edu.co.sena.instrumusiccrood.ItemCarrito</class>
+    <class>edu.co.sena.instrumusiccrood.Municipio</class>
+    <class>edu.co.sena.instrumusiccrood.Pedido</class>
+    <class>edu.co.sena.instrumusiccrood.Proveedor</class>
+    <class>edu.co.sena.instrumusiccrood.Departamento</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tiendaenlinea?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="123456789"/>
+      <!-- <property name="eclipselink.ddl-generation" value="create-tables"/> -->
+      <property name="eclipselink.logging.level" value="FINE"/>
+    </properties>
+  </persistence-unit>
+</persistence>

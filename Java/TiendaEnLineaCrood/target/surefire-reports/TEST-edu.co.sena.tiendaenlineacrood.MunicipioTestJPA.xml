@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="edu.co.sena.tiendaenlineacrood.MunicipioTestJPA" time="5.452" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_25\jre\bin"/>
+    <property name="java.vm.version" value="25.25-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="edu.co.sena.tiendaenlineacrood.MunicipioTestJPA#BuscarNombreMunicipio"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\archivo\TiendaEnLineaCrood"/>
+    <property name="java.runtime.version" value="1.8.0_25-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8"/>
+    <property name="maven.ext.class.path" value="C:\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\netbeans\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.2"/>
+    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="admin"/>
+    <property name="java.class.path" value="C:\netbeans\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_25\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=edu.co.sena.tiendaenlineacrood.MunicipioTestJPA#BuscarNombreMunicipio -Dmaven.ext.class.path=C:\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_25\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\netbeans\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase classname="edu.co.sena.tiendaenlineacrood.MunicipioTestJPA" name="BuscarNombreMunicipio" time="5.375">
+    <error message="You have attempted to set a parameter value using a name of nombreMunicipio that does not exist in the query string SELECT m FROM Municipio m WHERE m.nombre = :nombre." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: You have attempted to set a parameter value using a name of nombreMunicipio that does not exist in the query string SELECT m FROM Municipio m WHERE m.nombre = :nombre.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:928)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:1)
+	at edu.co.sena.tiendaenlineacrood.MunicipioTestJPA.BuscarNombreMunicipio(MunicipioTestJPA.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:45)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-out>[EL Config]: metadata: 2015-04-19 17:07:03.287--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.ItemCarrito] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.341--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field carritodecompras] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Carritodecompras.
+[EL Config]: metadata: 2015-04-19 17:07:03.349--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field producto] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Producto.
+[EL Config]: metadata: 2015-04-19 17:07:03.35--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.DomicilioProveedor] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.351--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field municipioidMunicipio] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Municipio.
+[EL Config]: metadata: 2015-04-19 17:07:03.353--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field proveedor] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Proveedor.
+[EL Config]: metadata: 2015-04-19 17:07:03.353--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Item] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.358--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field pedido] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Pedido.
+[EL Config]: metadata: 2015-04-19 17:07:03.358--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field producto] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Producto.
+[EL Config]: metadata: 2015-04-19 17:07:03.358--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Factura] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.363--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field cuenta] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Cuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.363--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field pedido] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Pedido.
+[EL Config]: metadata: 2015-04-19 17:07:03.364--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field pago] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Pago.
+[EL Config]: metadata: 2015-04-19 17:07:03.364--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Categoria] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.371--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field productoCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Producto.
+[EL Config]: metadata: 2015-04-19 17:07:03.372--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Usuario] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.373--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field cuentaCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Cuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.373--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Carritodecompras] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.375--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field itemCarritoCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.ItemCarrito.
+[EL Config]: metadata: 2015-04-19 17:07:03.376--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.DomicilioCuenta] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.376--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field municipioidMunicipio] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Municipio.
+[EL Config]: metadata: 2015-04-19 17:07:03.377--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field cuenta] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Cuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.378--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Departamento] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.379--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field municipioCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Municipio.
+[EL Config]: metadata: 2015-04-19 17:07:03.379--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Pedido] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.379--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field factura] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Factura.
+[EL Config]: metadata: 2015-04-19 17:07:03.38--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field itemCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Item.
+[EL Config]: metadata: 2015-04-19 17:07:03.38--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Proveedor] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.381--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field domicilioProveedor] is being defaulted to: class edu.co.sena.tiendaenlineacrood.DomicilioProveedor.
+[EL Config]: metadata: 2015-04-19 17:07:03.382--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field inventarioCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Inventario.
+[EL Config]: metadata: 2015-04-19 17:07:03.382--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Municipio] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.386--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field domicilioCuentaCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.DomicilioCuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.386--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field domicilioProveedorCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.DomicilioProveedor.
+[EL Config]: metadata: 2015-04-19 17:07:03.387--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field departamentoidDepartamento] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Departamento.
+[EL Config]: metadata: 2015-04-19 17:07:03.387--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Inventario] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.388--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field proveedor] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Proveedor.
+[EL Config]: metadata: 2015-04-19 17:07:03.389--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field producto] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Producto.
+[EL Config]: metadata: 2015-04-19 17:07:03.389--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Cuenta] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.389--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field domicilioCuenta] is being defaulted to: class edu.co.sena.tiendaenlineacrood.DomicilioCuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.389--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field usuarioidUsuario] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Usuario.
+[EL Config]: metadata: 2015-04-19 17:07:03.391--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field facturaCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Factura.
+[EL Config]: metadata: 2015-04-19 17:07:03.391--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Producto] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.391--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field itemCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Item.
+[EL Config]: metadata: 2015-04-19 17:07:03.392--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field categoriaidCategoria] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Categoria.
+[EL Config]: metadata: 2015-04-19 17:07:03.392--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field inventarioCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Inventario.
+[EL Config]: metadata: 2015-04-19 17:07:03.393--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field itemCarritoCollection] is being defaulted to: class edu.co.sena.tiendaenlineacrood.ItemCarrito.
+[EL Config]: metadata: 2015-04-19 17:07:03.394--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.Pago] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.394--ServerSession(12087621)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field factura] is being defaulted to: class edu.co.sena.tiendaenlineacrood.Factura.
+[EL Config]: metadata: 2015-04-19 17:07:03.395--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.DomicilioProveedorPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.396--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.ItemPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.396--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.ProveedorPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.396--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.CuentaPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.397--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.DomicilioCuentaPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.397--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.ItemCarritoPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.398--ServerSession(12087621)--Thread(Thread[main,5,main])--The access type for the persistent class [class edu.co.sena.tiendaenlineacrood.InventarioPK] is set to [FIELD].
+[EL Config]: metadata: 2015-04-19 17:07:03.398--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.ItemCarrito] is being defaulted to: ItemCarrito.
+[EL Config]: metadata: 2015-04-19 17:07:03.437--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.DomicilioProveedor] is being defaulted to: DomicilioProveedor.
+[EL Config]: metadata: 2015-04-19 17:07:03.438--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Item] is being defaulted to: Item.
+[EL Config]: metadata: 2015-04-19 17:07:03.438--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Factura] is being defaulted to: Factura.
+[EL Config]: metadata: 2015-04-19 17:07:03.442--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Categoria] is being defaulted to: Categoria.
+[EL Config]: metadata: 2015-04-19 17:07:03.443--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2015-04-19 17:07:03.443--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Carritodecompras] is being defaulted to: Carritodecompras.
+[EL Config]: metadata: 2015-04-19 17:07:03.444--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.DomicilioCuenta] is being defaulted to: DomicilioCuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.445--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Departamento] is being defaulted to: Departamento.
+[EL Config]: metadata: 2015-04-19 17:07:03.445--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Pedido] is being defaulted to: Pedido.
+[EL Config]: metadata: 2015-04-19 17:07:03.446--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Proveedor] is being defaulted to: Proveedor.
+[EL Config]: metadata: 2015-04-19 17:07:03.446--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Municipio] is being defaulted to: Municipio.
+[EL Config]: metadata: 2015-04-19 17:07:03.447--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Inventario] is being defaulted to: Inventario.
+[EL Config]: metadata: 2015-04-19 17:07:03.448--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Cuenta] is being defaulted to: Cuenta.
+[EL Config]: metadata: 2015-04-19 17:07:03.449--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Producto] is being defaulted to: Producto.
+[EL Config]: metadata: 2015-04-19 17:07:03.45--ServerSession(12087621)--Thread(Thread[main,5,main])--The alias name for the entity class [class edu.co.sena.tiendaenlineacrood.Pago] is being defaulted to: Pago.
+[EL Info]: 2015-04-19 17:07:04.544--ServerSession(12087621)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
+[EL Fine]: connection: 2015-04-19 17:07:04.971--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform
+[EL Config]: connection: 2015-04-19 17:07:04.991--ServerSession(12087621)--Connection(29315991)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=&gt;MySQLPlatform
+	user name=&gt; &quot;root&quot;
+	datasource URL=&gt; &quot;jdbc:mysql://localhost:3306/tiendaenlinea?zeroDateTimeBehavior=convertToNull&quot;
+))
+[EL Config]: connection: 2015-04-19 17:07:05.007--ServerSession(12087621)--Connection(28384967)--Thread(Thread[main,5,main])--Connected: jdbc:mysql://localhost:3306/tiendaenlinea?zeroDateTimeBehavior=convertToNull
+	User: root@localhost
+	Database: MySQL  Version: 5.6.19
+	Driver: MySQL-AB JDBC Driver  Version: mysql-connector-java-5.1.23 ( Revision: ${bzr.revision-id} )
+[EL Info]: connection: 2015-04-19 17:07:05.266--ServerSession(12087621)--Thread(Thread[main,5,main])--file:/E:/archivo/TiendaEnLineaCrood/target/classes/_edu.co.sena_TiendaEnLineaCrood_jar_1.0-SNAPSHOTPU login successful
+</system-out>
+  </testcase>
+</testsuite>
